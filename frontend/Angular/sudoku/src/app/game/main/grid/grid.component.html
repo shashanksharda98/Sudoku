@@ -1,0 +1,29 @@
+<mat-grid-list cols="3" class="main-container">
+
+    <mat-grid-tile *ngFor="let box of this.sudoku" colspan="1" rowspan="1" class="tile-container">
+
+    </mat-grid-tile>
+   
+
+</mat-grid-list>
+
+
+
+
+
+ <!-- <mat-grid-tile *ngFor="let box of this.sudoku; let j = index" class="tile-container" role="listitem"> -->
+
+    <!-- <mat-grid-list *ngFor="let box of this.sudoku;let j = index" cols="3">
+
+        <mat-grid-tile *ngFor="let cube of this.sudoku;let i = index" class="tile">
+
+            
+            <div class="tile">
+                <input type="text" [value]="this.sudoku[j][i]">
+            </div>
+
+        </mat-grid-tile>
+
+    </mat-grid-list> -->
+
+<!-- </mat-grid-tile> -->

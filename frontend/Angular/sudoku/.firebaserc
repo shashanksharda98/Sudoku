@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sudoku-c9ac7": {
+      "hosting": {
+        "sudoku": [
+          "sudoku-c9ac7"
+        ]
+      }
+    }
+  }
+}

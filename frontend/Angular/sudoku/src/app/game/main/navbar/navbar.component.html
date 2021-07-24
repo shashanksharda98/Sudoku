@@ -1,0 +1,56 @@
+
+<!--navbar once the user has logged in-->
+
+<mat-toolbar color="warn">
+    
+    <!--Only one row in the navbar-->
+    <mat-toolbar-row>
+
+
+        <span>SUDOKU</span>
+        <!--space between left and right items on the navbar-->
+        <span class="spacer"></span>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        
+
+    </mat-toolbar-row>
+
+
+
+
+</mat-toolbar>
+
+<!--list containing the contents of the menu icon on the navbar-->
+<mat-menu #menu="matMenu">
+
+    <button *ngIf="isAdmin" mat-menu-item>
+        <mat-icon>person_add</mat-icon>
+        <span>Add Admin</span>
+    </button>
+
+    <button *ngIf="isAdmin" mat-menu-item>
+        <mat-icon>add_to_photos</mat-icon>
+        <span>Add Puzzle</span>
+    </button>
+
+    <button *ngIf="!isAdmin" mat-menu-item>
+        <mat-icon>pie_chart</mat-icon>
+        <span>Stats</span>
+    </button>
+
+    <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+    </button>
+
+    <button mat-menu-item>
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+    </button>
+
+</mat-menu>
+
+

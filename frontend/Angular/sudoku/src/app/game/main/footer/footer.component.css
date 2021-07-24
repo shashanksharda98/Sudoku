@@ -1,0 +1,17 @@
+.quote-container{
+    font-style: italic;
+   
+}
+.a{
+    font-size: x-small;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.quote{
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+}
